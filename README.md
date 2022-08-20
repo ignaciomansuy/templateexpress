@@ -25,7 +25,7 @@ Now, you have to set the environment variables in a file named `.env`. Should fo
 
 After setting environment variables, you need an available MySQL database. You can use the dockerized DDBB only using [Docker Compose](https://docs.docker.com/compose/) with this command:
 ```bash
-docker-compose -up
+docker-compose up
 ```
 
 Finally, start the application in development mode using the following command:
