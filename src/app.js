@@ -3,8 +3,7 @@ import morgan from 'morgan'
 import cors from 'cors'
 
 import authRoutes from './routes/auth.routes.js'
-
-import { PORT } from './config.js'
+import { PORT, ORIGIN } from './config/config.js'
 
 const app = express()
 
@@ -13,7 +12,7 @@ app.set('port', PORT)
 app.set('json spaces', 4)
 
 // Middlewares
-app.use(cors({ origin: process.env.ORIGIN || 'https://localhost' }))
+app.use(cors({ origin: ORIGIN }))
 app.use(morgan('dev'))
 app.use(express.json())
 
