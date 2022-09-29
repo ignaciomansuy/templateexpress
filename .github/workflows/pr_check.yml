@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: npm install  
+        run: npm install
 
       - name: Run linters
         run: npm run lint
