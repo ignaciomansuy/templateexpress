@@ -11,5 +11,6 @@ const sequelize = new Sequelize(DB_USER, DB_NAME, DB_PASSWORD, {
 export const User = UserModel(sequelize, Sequelize)
 
 sequelize.sync({ force: false }).then(() => {
+  // eslint-disable-next-line no-console
   console.log('SERVER (DB): Database synchronized succesfully')
 })
