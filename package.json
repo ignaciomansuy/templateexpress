@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
-    "format:check": "prettier --check .",
-    "format:write": "prettier --write .",
-    "lint:check": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "format": "prettier --check .",
+    "format-write": "prettier --write .",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
   },
   "author": "FeBalla",
   "license": "ISC",
